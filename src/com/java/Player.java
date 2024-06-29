@@ -1,4 +1,4 @@
-package main.java;
+package com.java;
 
 // interface for Player Details
 interface GetPlayerDetails{
@@ -31,17 +31,17 @@ public class Player implements GetPlayerDetails, SetPlayerDetails {
     public void setHealth(int health){
         this.health=health;
     }
-
-    /*  Added getter, setter for Strength and Attack to easily extend the code 
-    for new features, like a bonus_attack or bonus_strength in future */
     public int getStrength(){
         return this.strength;
     }
-    public void setStrength(int strength){
-        this.strength=strength;
-    }
     public int getAttack(){
         return this.attack;
+    }
+
+    /*  Added setter for Strength and Attack to easily extend the code 
+    for new features, like a bonus_attack or bonus_strength in future */
+    public void setStrength(int strength){
+        this.strength=strength;
     }
     public void setAttack(int attack){
         this.attack=attack;
@@ -61,5 +61,6 @@ public class Player implements GetPlayerDetails, SetPlayerDetails {
         this.health=health;
         this.attack=attack;
         this.strength=strength;
+
     }
 }
