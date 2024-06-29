@@ -31,6 +31,9 @@ public class Player implements GetPlayerDetails, SetPlayerDetails {
     public void setHealth(int health){
         this.health=health;
     }
+
+    /*  Added getter, setter for Strength and Attack to easily extend the code 
+    for new features, like a bonus_attack or bonus_strength in future */
     public int getStrength(){
         return this.strength;
     }
