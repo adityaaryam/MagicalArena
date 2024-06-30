@@ -41,10 +41,10 @@ To run the application with dynamic inputs, run the command `make match` ensurin
 This command will prompt you for the inputs
 
 ## Run the Unit Tests
-* To test every component/behaviour: run the command `make 
-* To test Player: run the command `make test_player`
-* To test Match: run the command `make test_match`
-* To test MagicalArena: run the command `make test_magicalArena`
+* To test every component/behaviour: run the command `make test_all`, for windows env run `make test_all_win`
+* To test Player: run the command `make test_player`, for windows env run `make test_player_win`
+* To test Match: run the command `make test_match`, for windows env run `make test_match_win`
+* To test MagicalArena: run the command `make test_magicalArena`, for windows env run `make test_magicalArena_win`
 
 
 
