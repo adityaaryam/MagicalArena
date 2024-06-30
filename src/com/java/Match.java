@@ -20,9 +20,9 @@ public class Match {
     
     public void startMatch(){
         if (playerA_att_first){
-            System.out.println("Player A attacks first");
+            System.out.println("\nPlayer A attacks first");
         } else{
-            System.out.println("Player B attacks first");
+            System.out.println("\nPlayer B attacks first");
         }
         int round=1;
         System.out.println("Round \tPlayer A Dice \tPlayer B Dice \tPlayer A Health\t Player B Health");
