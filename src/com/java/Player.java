@@ -13,12 +13,12 @@ interface SetPlayerDetails{
 }
 
 // Exception class for any invalid attribute
-class InvalidAttributeException extends Exception{    
-    public InvalidAttributeException(String attribute)
-    {
-        super("Initial "+attribute+" must be positive");
-    }
-}
+// class Exception extends Exception{    
+//     public Exception(String attribute)
+//     {
+//         super("Initial "+attribute+" must be positive");
+//     }
+// }
 
 public class Player implements GetPlayerDetails, SetPlayerDetails {
     private int health;
@@ -48,15 +48,15 @@ public class Player implements GetPlayerDetails, SetPlayerDetails {
     }
 
     // Parametrized Constructor
-    public Player(int health, int attack, int strength) throws InvalidAttributeException{
+    public Player(int health, int attack, int strength) throws Exception{
         if(health<=0){
-            throw new InvalidAttributeException("health");
+            throw new Exception("health");
         }
         if(attack<=0){
-            throw new InvalidAttributeException("attack");
+            throw new Exception("attack");
         }
         if(strength<=0){
-            throw new InvalidAttributeException("strength");
+            throw new Exception("strength");
         }
         this.health=health;
         this.attack=attack;
